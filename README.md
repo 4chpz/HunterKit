@@ -22,12 +22,12 @@ HunterKit is a **cutting-edge web vulnerability scanner** designed for security 
 
 ### Why HunterKit?
 
-- ** Advanced Detection**: Context-aware vulnerability analysis with industry-leading accuracy
-- ** Lightning Fast**: Multi-threaded scanning with intelligent rate limiting
-- ** WAF Evasion**: Built-in techniques to bypass modern security protections
-- ** Professional Reports**: Export-ready reports in TXT and JSON formats
-- ** Highly Customizable**: Extensive payload libraries with easy customization
-- ** Production Ready**: Battle-tested against real-world applications
+- **Advanced Detection**: Context-aware vulnerability analysis with industry-leading accuracy
+- **Lightning Fast**: Multi-threaded scanning with intelligent rate limiting
+- **WAF Evasion**: Built-in techniques to bypass modern security protections
+- **Professional Reports**: Export-ready reports in TXT and JSON formats
+- **Highly Customizable**: Extensive payload libraries with easy customization
+- **Production Ready**: Battle-tested against real-world applications
 
 ---
 
@@ -45,11 +45,11 @@ HunterKit is a **cutting-edge web vulnerability scanner** designed for security 
 
 ### **Advanced Security Features**
 
-- ** WAF Detection & Evasion**: Identifies 10+ popular WAFs (Cloudflare, Akamai, AWS, etc.)
-- ** Anti-Fingerprinting**: Header rotation and request obfuscation
-- ** Smart Rate Limiting**: Intelligent delays to avoid detection
-- ** Context Analysis**: Advanced XSS context evaluation
-- ** Real-time Statistics**: Comprehensive scan metrics and performance data
+- **WAF Detection & Evasion**: Identifies 10+ popular WAFs (Cloudflare, Akamai, AWS, etc.)
+- **Anti-Fingerprinting**: Header rotation and request obfuscation
+- **Smart Rate Limiting**: Intelligent delays to avoid detection
+- **Context Analysis**: Advanced XSS context evaluation
+- **Real-time Statistics**: Comprehensive scan metrics and performance data
 
 ---
 
@@ -58,7 +58,8 @@ HunterKit is a **cutting-edge web vulnerability scanner** designed for security 
 ###  Installation
 
 ```bash
-# Download and extract HunterKit
+# Clone and extract HunterKit
+git clone https://github.com/kawinduwijewardhane/HunterKit.git
 cd HunterKit
 
 # Install dependencies
@@ -254,10 +255,10 @@ pip3 install -r requirements.txt
 ##  Community
 
 ###  **Join Our Community**
-- ** Twitter**: [@k_wijewardhane](https://twitter.com/k_wijewardhane)
-- ** LinkedIn**: [kawinduwijewardhane](https://linkedin.com/in/kawinduwijewardhane)
-- ** Email**: security@kawindu.co.uk
-- ** Website**: [kawindu.co.uk](https://www.kawindu.co.uk)
+- **Twitter**: [@k_wijewardhane](https://twitter.com/k_wijewardhane)
+- **LinkedIn**: [kawinduwijewardhane](https://linkedin.com/in/kawinduwijewardhane)
+- **Email**: security@kawindu.co.uk
+- **Website**: [kawindu.co.uk](https://www.kawindu.co.uk)
 
 ###  **Stay Updated**
 -  **Star this repository** for updates
